@@ -1,6 +1,5 @@
 from django.contrib.auth import get_user_model
 from django.test import override_settings
-from django.urls import reverse, resolve
 from rest_framework.test import APITestCase, APIClient
 from rest_framework import status
 from rest_framework_simplejwt.tokens import RefreshToken
@@ -9,7 +8,7 @@ User = get_user_model()
 
 @override_settings(
     ROOT_URLCONF='authapi.urls'
-)  # exemplo de como isolar settings
+)
 class UserTests(APITestCase):
     def setUp(self):
         self.client = APIClient()

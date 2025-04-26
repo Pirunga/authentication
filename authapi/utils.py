@@ -4,7 +4,6 @@ import pytz
 
 def generate_timestamp() -> str:
         """Generates a timestamp."""
-
         tz = pytz.timezone("America/Argentina/Buenos_Aires")
         current_date = datetime.now(tz=tz)
         current_date = current_date.strftime('%y%m%d')

@@ -1,9 +1,5 @@
 from .models import CustomUser
-from .utils import generate_timestamp
-
-from django.contrib.auth import authenticate
 from rest_framework import serializers
-import re
 
 
 class CustomUserSerializer(serializers.ModelSerializer):
@@ -23,7 +19,6 @@ class CustomUserCreateSerializer(serializers.ModelSerializer):
 class CustomUserLoginSerializer(serializers.Serializer):
     email = serializers.EmailField()
     password = serializers.CharField(write_only=True)
-
 
 
 class CustomUserLogoutSerializer(serializers.Serializer):

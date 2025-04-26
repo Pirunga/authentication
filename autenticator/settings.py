@@ -46,9 +46,7 @@ INSTALLED_APPS = [
     'drf_yasg',
     'rest_framework',
     'rest_framework_simplejwt.token_blacklist',
-    # 'rest_framework_swagger',
 
-    # Custom app for authentication
     'authapi', 
 ]
 
@@ -118,13 +116,13 @@ LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'handlers': {
-        'console': {  # Log para o terminal
+        'console': {
             'class': 'logging.StreamHandler',
         },
     },
     'root': {
         'handlers': ['console'],
-        'level': 'INFO',  # Aqui define o nível mínimo
+        'level': 'INFO',
     },
     'loggers': {
         'django': {

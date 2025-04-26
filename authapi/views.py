@@ -84,7 +84,6 @@ class UserLogoutView(ModelViewSet):
 
     def create(self, request, *args, **kwargs):
         try:
-            # if request.user.is_authenticated:
             token = RefreshToken(request.data['refresh_token'])
             token.blacklist()
             return Response(status=status.HTTP_205_RESET_CONTENT)
