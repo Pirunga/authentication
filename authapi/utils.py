@@ -2,7 +2,7 @@ from datetime import datetime
 import pytz
 
 
-def generate_timestamp(self) -> str:
+def generate_timestamp() -> str:
         """Generates a timestamp."""
 
         tz = pytz.timezone("America/Argentina/Buenos_Aires")
