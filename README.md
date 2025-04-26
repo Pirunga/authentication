@@ -54,18 +54,12 @@ python -m venv .venv
 
 | Plataform | Shell          | Command |
 |:------:|:------------------ |:---------------------------------|
-| POSIX   | bash/zsh        | ```bash
-                                 $ source <venv>/bin/activate```      |
-| POSIX   | fish        | ```bash
-                                 $ source <venv>/bin/activate.fish```      |
-| POSIX   | csh/tcsh        | ```bash
-                                 $ source <venv>/bin/activate.csh```      |
-| POSIX   | pwsh        | ```bash
-                                 $ <venv>/bin/Activate.ps1```      |
-| Windows   | cmd.exe        | ```bash
-                                 C:\> <venv>\Scripts\activate.bat```      |
- Windows   | PowerShell        | ```bash
-                                 PS C:\> <venv>\Scripts\Activate.ps1```      |
+| POSIX   | bash/zsh        | ```$ source <venv>/bin/activate```      |
+| POSIX   | fish        | ```$ source <venv>/bin/activate.fish```      |
+| POSIX   | csh/tcsh        | ```$ source <venv>/bin/activate.csh```      |
+| POSIX   | pwsh        | ```$ <venv>/bin/Activate.ps1```      |
+| Windows   | cmd.exe        | ```C:\> <venv>\Scripts\activate.bat```      |
+ Windows   | PowerShell        | ```PS C:\> <venv>\Scripts\Activate.ps1```      |
 
 5. Install project dependency.
 
@@ -153,6 +147,7 @@ Content-Type: application/json
     "username": "YourFirstNameYourLastName25042402174450",
     "email": "email@example.com"
 }
+```
 
 ### 🔐 User Login
 
