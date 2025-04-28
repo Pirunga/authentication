@@ -67,8 +67,12 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-6. Start the Docker containers:
+6. Start the server (For local tests).
+```bash
+python manage.py runserver
+```
 
+7. Start the Docker containers (For prod tests):
 ```bash
 docker-compose up --build
 ```
